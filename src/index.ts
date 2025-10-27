@@ -38,7 +38,7 @@ function showHelp(): void {
   console.log('  npm install -g gassapi-mcp2    # Global install');
   console.log('  claude mcp add gassapi-mcp2      # Add to Claude Code');
   console.log('');
-  console.log('For more information, visit: https://github.com/gassapi/gassapi-mcp2');
+  console.log('For more information, visit: https://github.com/martin-1103/mcp2');
 }
 
 /**

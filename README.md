@@ -11,6 +11,13 @@ Model Context Protocol (MCP) server untuk integrasi GASSAPI dengan AI assistants
 
 ## 📦 Installation
 
+### Step 1: Install Package
+```bash
+npm install martin-1103/mcp2
+```
+
+### Step 2: Installation Method
+
 ### Method 1: Global Install (Recommended)
 ```bash
 npm install -g gassapi-mcp2
