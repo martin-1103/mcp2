@@ -17,12 +17,7 @@ npm install -g gassapi-mcp2
 claude mcp add gassapi-mcp2
 ```
 
-### Method 2: npx (No Install Needed)
-```bash
-claude mcp add gassapi-mcp2 -- npx gassapi-mcp2
-```
-
-### Method 3: Local Install
+### Method 2: Local Install
 ```bash
 npm install gassapi-mcp2
 claude mcp add gassapi-mcp2
