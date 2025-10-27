@@ -1,0 +1,10 @@
+{
+  "project": {
+    "id": "proj_1761385246_5ec798d9",
+    "name": "Test Project",
+    "description": "Project for MCP testing"
+  },
+  "mcpClient": {
+    "token": "2032781cbb63ea282749778091b2170a5a18d0491a519bad4ab488ab463e885d"
+  }
+}

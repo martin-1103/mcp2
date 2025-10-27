@@ -1,0 +1,48 @@
+{
+  "name": "gassapi-mcp2",
+  "version": "2.0.0",
+  "description": "GASSAPI MCP Server - AI-powered API testing and automation tools",
+  "main": "dist/index.js",
+  "bin": {
+    "gassapi-mcp2": "dist/index.js"
+  },
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsx watch src/index.ts",
+    "start": "node dist/index.js",
+    "test": "node test-client.js",
+    "clean": "rimraf dist",
+    "typecheck": "tsc --noEmit",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "mcp",
+    "api-testing",
+    "automation",
+    "gassapi",
+    "ai-assistant",
+    "model-context-protocol"
+  ],
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.20.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.19.22",
+    "rimraf": "^5.0.0",
+    "tsx": "^4.0.0",
+    "typescript": "^5.0.0"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "CLAUDE.md"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gassapi/gassapi-mcp2.git"
+  }
+}
