@@ -75,8 +75,8 @@ export class ConfigManager {
     const currentDir = process.cwd();
     let searchDir = currentDir;
 
-    // Search up to 5 levels up
-    for (let i = 0; i < 5; i++) {
+    // Search up to 10 levels up to find the config
+    for (let i = 0; i < 10; i++) {
       const configFiles = [
         path.join(searchDir, 'gassapi.json'),
         path.join(searchDir, 'gassapi-mcp.json'),
@@ -86,6 +86,7 @@ export class ConfigManager {
       for (const configFile of configFiles) {
         try {
           await fs.access(configFile);
+          console.error(`[CONFIG] Found config file at: ${configFile}`);
           return configFile;
         } catch {
           // File doesn't exist, continue searching
@@ -99,6 +100,7 @@ export class ConfigManager {
       searchDir = parentDir;
     }
 
+    console.error(`[CONFIG] No config file found starting from: ${currentDir}`);
     return null;
   }
 
