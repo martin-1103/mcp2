@@ -20,12 +20,7 @@ npm install -g gassapi-mcp2
 gassapi-mcp2 --help
 
 # Add to Claude Code
-# Linux/macOS/WSL
-claude mcp add --transport stdio gassapi -- npx -y gassapi-mcp2
-
-# Windows
-claude mcp add --transport stdio gassapi -- cmd /c npx -y gassapi-mcp2
-
+claude mcp add --transport stdio gassapi-mcp2 gassapi-mcp2
 ```
 
 ## 📋 Simple Setup (3 Steps)

@@ -5,8 +5,8 @@
  * All functionality is preserved while improving maintainability.
  */
 import { EndpointToolHandler } from './types.js';
-import { handleListEndpoints, handleGetEndpointDetails, handleCreateEndpoint, handleUpdateEndpoint } from './handlers/index.js';
-export { handleListEndpoints, handleGetEndpointDetails, handleCreateEndpoint, handleUpdateEndpoint };
+import { handleListEndpoints, handleGetEndpointDetails, handleCreateEndpoint, handleUpdateEndpoint, handleDeleteEndpoint } from './handlers/index.js';
+export { handleListEndpoints, handleGetEndpointDetails, handleCreateEndpoint, handleUpdateEndpoint, handleDeleteEndpoint };
 /**
  * Create all endpoint tool handlers
  */

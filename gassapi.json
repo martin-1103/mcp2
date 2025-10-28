@@ -1,10 +1,13 @@
 {
   "project": {
-    "id": "proj_1761604608_073a21f6",
-    "name": "Test Quiz Project 2",
-    "description": "Project untuk testing quiz functionality dengan proper password"
+    "id": "proj_1761385246_5ec798d9",
+    "name": "Test Project",
+    "description": "Project for MCP testing"
   },
   "mcpClient": {
-    "token": "1dfe3364945479bf4015ac23fa3270226bbed689fd905b8b53921cadbf056063"
+    "token": "2032781cbb63ea282749778091b2170a5a18d0491a519bad4ab488ab463e885d"
+  },
+  "api": {
+    "baseURL": "http://localhost:8080/gassapi2/backend"
   }
 }

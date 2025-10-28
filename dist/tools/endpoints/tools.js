@@ -179,11 +179,27 @@ export const updateEndpointTool = {
         required: ['endpoint_id']
     }
 };
+// Tool: delete_endpoint
+export const deleteEndpointTool = {
+    name: 'delete_endpoint',
+    description: 'Delete an endpoint permanently',
+    inputSchema: {
+        type: 'object',
+        properties: {
+            endpoint_id: {
+                type: 'string',
+                description: 'Endpoint ID to delete (required)'
+            }
+        },
+        required: ['endpoint_id']
+    }
+};
 // Export all tools as array
 export const ENDPOINT_TOOLS = [
     listEndpointsTool,
     getEndpointDetailsTool,
     createEndpointTool,
-    updateEndpointTool
+    updateEndpointTool,
+    deleteEndpointTool
 ];
 //# sourceMappingURL=tools.js.map

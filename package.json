@@ -1,6 +1,6 @@
 {
   "name": "gassapi-mcp2",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "GASSAPI MCP Server - AI-powered API testing and automation tools",
   "main": "dist/index.js",
   "bin": {

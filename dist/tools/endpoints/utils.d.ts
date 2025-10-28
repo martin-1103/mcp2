@@ -50,3 +50,7 @@ export declare function formatEndpointUpdateText(endpoint: any): string;
  * Format endpoint move text
  */
 export declare function formatEndpointMoveText(endpoint: any): string;
+/**
+ * Format endpoint delete text
+ */
+export declare function formatEndpointDeleteText(endpointId: string, success: boolean, message?: string): string;

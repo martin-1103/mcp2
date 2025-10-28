@@ -5,3 +5,4 @@ export { handleListEndpoints } from './list-handler.js';
 export { handleGetEndpointDetails } from './details-handler.js';
 export { handleCreateEndpoint } from './create-handler.js';
 export { handleUpdateEndpoint, handleMoveEndpoint } from './update-handler.js';
+export { handleDeleteEndpoint } from './delete-handler.js';

@@ -189,4 +189,27 @@ export function formatEndpointMoveText(endpoint) {
     moveText += `🌐 URL: ${endpoint.url}\n`;
     return moveText;
 }
+/**
+ * Format endpoint delete text
+ */
+export function formatEndpointDeleteText(endpointId, success, message) {
+    if (success) {
+        let deleteText = `✅ Endpoint deleted successfully\n\n`;
+        deleteText += `📋 Details:\n`;
+        deleteText += `• Endpoint ID: ${endpointId}\n`;
+        deleteText += `• Status: Deleted\n`;
+        if (message) {
+            deleteText += `• Message: ${message}\n`;
+        }
+        deleteText += `\n⚠️  Note: This action cannot be undone.`;
+        return deleteText;
+    }
+    else {
+        let deleteText = `❌ Failed to delete endpoint\n\n`;
+        deleteText += `📋 Details:\n`;
+        deleteText += `• Endpoint ID: ${endpointId}\n`;
+        deleteText += `• Error: ${message || 'Unknown error'}\n`;
+        return deleteText;
+    }
+}
 //# sourceMappingURL=utils.js.map

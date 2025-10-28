@@ -102,5 +102,15 @@ export interface EndpointMoveResponse {
   message?: string;
 }
 
+export interface EndpointDeleteResponse {
+  success: boolean;
+  data?: {
+    id: string;
+    deleted: boolean;
+    message?: string;
+  };
+  message?: string;
+}
+
 // Tool handler function types
 export type EndpointToolHandler = (args: Record<string, any>) => Promise<McpToolResponse>;

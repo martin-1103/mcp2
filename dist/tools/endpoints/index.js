@@ -10,11 +10,11 @@ export const TOOLS = ENDPOINT_TOOLS;
 // Export tool creators
 export { createEndpointToolHandlers };
 // Export handlers
-export { handleListEndpoints, handleGetEndpointDetails, handleCreateEndpoint, handleUpdateEndpoint } from './handlers.js';
+export { handleListEndpoints, handleGetEndpointDetails, handleCreateEndpoint, handleUpdateEndpoint, handleDeleteEndpoint } from './handlers.js';
 // Export tools individually
-export { listEndpointsTool, getEndpointDetailsTool, createEndpointTool, updateEndpointTool } from './tools.js';
+export { listEndpointsTool, getEndpointDetailsTool, createEndpointTool, updateEndpointTool, deleteEndpointTool } from './tools.js';
 // Export utils
-export { formatHeaders, parseHeaders, formatBody, validateEndpointData, validateUpdateData, formatEndpointListText, formatEndpointDetailsText, formatEndpointCreateText, formatEndpointUpdateText, formatEndpointMoveText } from './utils.js';
+export { formatHeaders, parseHeaders, formatBody, validateEndpointData, validateUpdateData, formatEndpointListText, formatEndpointDetailsText, formatEndpointCreateText, formatEndpointUpdateText, formatEndpointMoveText, formatEndpointDeleteText } from './utils.js';
 // Export dependencies
 export { getEndpointDependencies, resetDependencies } from './dependencies.js';
 // Legacy ToolHandlers class for backward compatibility
@@ -38,6 +38,10 @@ export class ToolHandlers {
     static async handleMoveEndpoint(args) {
         const handlers = createEndpointToolHandlers();
         return handlers.move_endpoint(args);
+    }
+    static async handleDeleteEndpoint(args) {
+        const handlers = createEndpointToolHandlers();
+        return handlers.delete_endpoint(args);
     }
 }
 // Legacy function for backward compatibility

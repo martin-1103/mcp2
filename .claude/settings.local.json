@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Read(//d/xampp82/htdocs/gassapi2/backend/src/routes/**)",
+      "Read(//d/xampp82/htdocs/gassapi2/backend/**)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}

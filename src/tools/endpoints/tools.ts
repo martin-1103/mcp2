@@ -187,11 +187,28 @@ export const updateEndpointTool: McpTool = {
   }
 };
 
+// Tool: delete_endpoint
+export const deleteEndpointTool: McpTool = {
+  name: 'delete_endpoint',
+  description: 'Delete an endpoint permanently',
+  inputSchema: {
+    type: 'object',
+    properties: {
+      endpoint_id: {
+        type: 'string',
+        description: 'Endpoint ID to delete (required)'
+      }
+    },
+    required: ['endpoint_id']
+  }
+};
+
 
 // Export all tools as array
 export const ENDPOINT_TOOLS: McpTool[] = [
   listEndpointsTool,
   getEndpointDetailsTool,
   createEndpointTool,
-  updateEndpointTool
+  updateEndpointTool,
+  deleteEndpointTool
 ];

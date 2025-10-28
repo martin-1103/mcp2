@@ -10,13 +10,15 @@ import {
   listEndpointsTool,
   getEndpointDetailsTool,
   createEndpointTool,
-  updateEndpointTool
+  updateEndpointTool,
+  deleteEndpointTool
 } from './tools.js';
 import {
   handleListEndpoints,
   handleGetEndpointDetails,
   handleCreateEndpoint,
-  handleUpdateEndpoint
+  handleUpdateEndpoint,
+  handleDeleteEndpoint
 } from './handlers/index.js';
 
 // Re-export handlers from individual modules
@@ -24,7 +26,8 @@ export {
   handleListEndpoints,
   handleGetEndpointDetails,
   handleCreateEndpoint,
-  handleUpdateEndpoint
+  handleUpdateEndpoint,
+  handleDeleteEndpoint
 };
 
 /**
@@ -35,6 +38,7 @@ export function createEndpointToolHandlers(): Record<string, EndpointToolHandler
     [listEndpointsTool.name]: handleListEndpoints,
     [getEndpointDetailsTool.name]: handleGetEndpointDetails,
     [createEndpointTool.name]: handleCreateEndpoint,
-    [updateEndpointTool.name]: handleUpdateEndpoint
+    [updateEndpointTool.name]: handleUpdateEndpoint,
+    [deleteEndpointTool.name]: handleDeleteEndpoint
   };
 }

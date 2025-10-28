@@ -92,4 +92,13 @@ export interface EndpointMoveResponse {
     success: boolean;
     message?: string;
 }
+export interface EndpointDeleteResponse {
+    success: boolean;
+    data?: {
+        id: string;
+        deleted: boolean;
+        message?: string;
+    };
+    message?: string;
+}
 export type EndpointToolHandler = (args: Record<string, any>) => Promise<McpToolResponse>;

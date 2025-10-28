@@ -8,11 +8,11 @@ import { createEndpointToolHandlers } from './handlers.js';
 export { ENDPOINT_TOOLS };
 export declare const TOOLS: McpTool[];
 export { createEndpointToolHandlers };
-export { handleListEndpoints, handleGetEndpointDetails, handleCreateEndpoint, handleUpdateEndpoint } from './handlers.js';
-export { listEndpointsTool, getEndpointDetailsTool, createEndpointTool, updateEndpointTool } from './tools.js';
+export { handleListEndpoints, handleGetEndpointDetails, handleCreateEndpoint, handleUpdateEndpoint, handleDeleteEndpoint } from './handlers.js';
+export { listEndpointsTool, getEndpointDetailsTool, createEndpointTool, updateEndpointTool, deleteEndpointTool } from './tools.js';
 export type { HttpMethod } from './types.js';
-export type { EndpointListResponse, EndpointDetailsResponse, EndpointCreateResponse, EndpointUpdateResponse, EndpointMoveResponse, EndpointToolHandler } from './types.js';
-export { formatHeaders, parseHeaders, formatBody, validateEndpointData, validateUpdateData, formatEndpointListText, formatEndpointDetailsText, formatEndpointCreateText, formatEndpointUpdateText, formatEndpointMoveText } from './utils.js';
+export type { EndpointListResponse, EndpointDetailsResponse, EndpointCreateResponse, EndpointUpdateResponse, EndpointMoveResponse, EndpointDeleteResponse, EndpointToolHandler } from './types.js';
+export { formatHeaders, parseHeaders, formatBody, validateEndpointData, validateUpdateData, formatEndpointListText, formatEndpointDetailsText, formatEndpointCreateText, formatEndpointUpdateText, formatEndpointMoveText, formatEndpointDeleteText } from './utils.js';
 export { getEndpointDependencies, resetDependencies } from './dependencies.js';
 export declare class ToolHandlers {
     static handleListEndpoints(args?: {
@@ -44,6 +44,9 @@ export declare class ToolHandlers {
     static handleMoveEndpoint(args: {
         endpoint_id: string;
         new_folder_id: string;
+    }): Promise<McpToolResponse>;
+    static handleDeleteEndpoint(args: {
+        endpoint_id: string;
     }): Promise<McpToolResponse>;
 }
 export declare function createToolHandlers(config: any): Record<string, (args: any) => Promise<McpToolResponse>>;

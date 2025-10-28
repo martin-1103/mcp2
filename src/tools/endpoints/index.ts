@@ -21,7 +21,8 @@ export {
   handleListEndpoints,
   handleGetEndpointDetails,
   handleCreateEndpoint,
-  handleUpdateEndpoint
+  handleUpdateEndpoint,
+  handleDeleteEndpoint
 } from './handlers.js';
 
 // Export tools individually
@@ -29,7 +30,8 @@ export {
   listEndpointsTool,
   getEndpointDetailsTool,
   createEndpointTool,
-  updateEndpointTool
+  updateEndpointTool,
+  deleteEndpointTool
 } from './tools.js';
 
 // Export types
@@ -40,6 +42,7 @@ export type {
   EndpointCreateResponse,
   EndpointUpdateResponse,
   EndpointMoveResponse,
+  EndpointDeleteResponse,
   EndpointToolHandler
 } from './types.js';
 
@@ -54,7 +57,8 @@ export {
   formatEndpointDetailsText,
   formatEndpointCreateText,
   formatEndpointUpdateText,
-  formatEndpointMoveText
+  formatEndpointMoveText,
+  formatEndpointDeleteText
 } from './utils.js';
 
 // Export dependencies
@@ -111,6 +115,13 @@ export class ToolHandlers {
   }): Promise<McpToolResponse> {
     const handlers = createEndpointToolHandlers();
     return handlers.move_endpoint(args);
+  }
+
+  static async handleDeleteEndpoint(args: {
+    endpoint_id: string;
+  }): Promise<McpToolResponse> {
+    const handlers = createEndpointToolHandlers();
+    return handlers.delete_endpoint(args);
   }
 }
 
