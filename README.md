@@ -20,7 +20,7 @@ npm install -g gassapi-mcp2
 gassapi-mcp2 --help
 
 # Add to Claude Code
-claude mcp add gassapi-mcp2
+claude mcp add npx gassapi-mcp2
 ```
 
 ## 📋 Simple Setup (3 Steps)
