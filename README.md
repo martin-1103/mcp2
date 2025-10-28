@@ -11,22 +11,12 @@ Model Context Protocol (MCP) server untuk integrasi GASSAPI dengan AI assistants
 
 ## 📦 Installation
 
-### Step 1: Install Package
+### Install Package
 ```bash
-npm install martin-1103/mcp2
-```
+# Install from GitHub
+npm install -g martin-1103/mcp2
 
-### Step 2: Installation Method
-
-### Method 1: Global Install (Recommended)
-```bash
-npm install -g gassapi-mcp2
-claude mcp add gassapi-mcp2
-```
-
-### Method 2: Local Install
-```bash
-npm install gassapi-mcp2
+# Add to Claude Code
 claude mcp add gassapi-mcp2
 ```
 
@@ -357,8 +347,8 @@ MCP server akan otomatis mencari `gassapi.json` di:
 - Check koneksi internet dan firewall settings
 
 **4. MCP server not found**
-- Install globally: `npm install -g gassapi-mcp2`
-- Atau gunakan npx: `npx gassapi-mcp2`
+- Install globally: `npm install -g martin-1103/mcp2`
+- Atau gunakan npx: `npx martin-1103/mcp2`
 
 ### Debug Commands
 ```bash

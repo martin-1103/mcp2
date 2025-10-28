@@ -4,7 +4,7 @@
   "description": "GASSAPI MCP Server - AI-powered API testing and automation tools",
   "main": "dist/index.js",
   "bin": {
-    "gassapi-mcp2": "dist/index.js"
+    "gassapi-mcp2": "dist/cli.js"
   },
   "type": "module",
   "scripts": {
