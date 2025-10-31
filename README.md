@@ -2,6 +2,10 @@
 
 Model Context Protocol (MCP) server untuk integrasi GASSAPI dengan AI assistants.
 
+<a href="https://glama.ai/mcp/servers/@martin-1103/mcp2">
+  <img width="380" height="200" src="https://glama.ai/mcp/servers/@martin-1103/mcp2/badge" alt="GASSAPI Server MCP server" />
+</a>
+
 ## 🚀 Quick Start
 
 ### Prerequisites
